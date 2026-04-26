@@ -132,9 +132,7 @@ WHERE price > avg_price;
 
 --12. 找每个城市：最贵房源、最便宜房源，输出：| city | max_price | min_price |
 SELECT 
-    id,
     city,
-    price, 
     MAX(price) AS max_price,
     MIN(price) AS min_price
 FROM listings
